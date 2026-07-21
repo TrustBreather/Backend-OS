@@ -1,0 +1,19 @@
+﻿{
+    "original_file":  "gpt_agent.exe",
+    "original_bytes":  39218016,
+    "original_sha256":  "32A10A4CCAE407F6328B23714A854084373ACE2C04DA1EAC158A566D02DA8BF3",
+    "chunk_size_mib":  23,
+    "chunk_count":  2,
+    "chunks":  [
+                   {
+                       "file":  "gpt_agent.exe.part001",
+                       "bytes":  24117248,
+                       "sha256":  "3B91C290959685C9DCA81E295F5557E794E1723E26C2C6CF16F55F0FC6F3C441"
+                   },
+                   {
+                       "file":  "gpt_agent.exe.part002",
+                       "bytes":  15100768,
+                       "sha256":  "038D3FAF037E5F188C8D0BB03D42353BD33D1113974D3D9E02692108F224DD1B"
+                   }
+               ]
+}
