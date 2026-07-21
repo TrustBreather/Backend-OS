@@ -1,37 +1,52 @@
-# Backend OS Release
+# GPT Agent (Windows)
 
-This release stores `gpt_agent.exe` as split parts so every Git object stays below 25 MB.
+Bản phát hành này chứa file thực thi **được chia nhỏ** (`.part000`, `.part001`, ...).
+Bạn cần **ghép lại** để tạo `gpt_agent.exe`, lấy **HDID** để nhận **license `.json`**, và (nếu chưa có) cài **ngrok** một lần.
 
-## Rebuild `gpt_agent.exe`
+---
 
-1. Download all files in this folder.
-2. Double-click `merge.bat`.
-3. The script rebuilds `gpt_agent.exe` and verifies SHA256 against `manifest.json`.
+## 1) Ghép file thành `gpt_agent.exe`
 
-Equivalent PowerShell command:
+- Tải **đầy đủ** các file `.part***` về **cùng 1 thư mục**
+- **Double-click `merge.bat`**
+- Sau khi xong sẽ có:
+  ```
+  gpt_agent.exe
+  ```
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\join_gpt_agent.ps1
+---
+
+## 2) Lấy HDID & cài license
+
+1. **Double-click `get_hdid.exe`** → copy **HDID**
+2. Gửi HDID cho **nhà cung cấp** để nhận **license `.json`**
+3. Đặt file license `.json` **cạnh** `gpt_agent.exe`
+
+Ví dụ:
+
+```
+gpt_agent.exe
+license.json
 ```
 
-## Included Files
+---
 
-- `gpt_agent.exe.part001`
-- `gpt_agent.exe.part002`
-- `manifest.json`
-- `join_gpt_agent.bat`
-- `join_gpt_agent.ps1`
-- `merge.bat` and `merge.ps1` compatibility wrappers
-- `get_hdid.exe`
+## 3) Cài ngrok + add token (chỉ 1 lần)
 
-## SHA256
+> Sau khi xác thực và chạy `gpt_agent.exe`, chương trình sẽ tự tạo các file start (ví dụ `start_ngrok.bat`).
+> Bạn chỉ cần đảm bảo **ngrok đã cài** và **đã add Authtoken** trước.
 
-Expected `gpt_agent.exe` SHA256:
+1. Tải ngrok: https://ngrok.com/download → giải nén lấy `ngrok.exe`
+2. Đăng nhập https://ngrok.com/ → Dashboard → **Your Authtoken** → copy token
+3. Mở CMD/PowerShell và chạy:
+   ```
+   ngrok config add-authtoken YOUR_TOKEN
+   ```
 
-```text
-32A10A4CCAE407F6328B23714A854084373ACE2C04DA1EAC158A566D02DA8BF3
-```
+---
 
-## License
+## 4) Chạy & setup
 
-Run `get_hdid.exe`, send the HDID to receive `license.json`, then place `license.json` next to `gpt_agent.exe`.
+- **Double-click `gpt_agent.exe`**
+- Chương trình sẽ tạo các file cần thiết cho setup → mở và làm theo **`SETUP_README.md`**
+- **Lưu ý:** `gpt_agent.exe` và `start_ngrok.bat` cần chạy **đồng thời**.
