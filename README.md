@@ -31,21 +31,7 @@ license.json
 
 ---
 
-## 3) Cài ngrok + add token (chỉ 1 lần)
-
-> Sau khi xác thực và chạy `gpt_agent.exe`, chương trình sẽ tự tạo các file start (ví dụ `start_ngrok.bat`).
-> Bạn chỉ cần đảm bảo **ngrok đã cài** và **đã add Authtoken** trước.
-
-1. Tải ngrok: https://ngrok.com/download → giải nén lấy `ngrok.exe`
-2. Đăng nhập https://ngrok.com/ → Dashboard → **Your Authtoken** → copy token
-3. Mở CMD/PowerShell và chạy:
-   ```
-   ngrok config add-authtoken YOUR_TOKEN
-   ```
-
----
-
-## 4) Chạy & setup
+## 3) Chạy & setup
 
 - **Double-click `gpt_agent.exe`**
 - Chương trình sẽ tạo các file cần thiết cho setup → mở và làm theo **`SETUP_README.md`**
