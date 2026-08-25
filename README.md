@@ -1,7 +1,7 @@
 # GPT Agent (Windows)
 
 Bản phát hành này chứa file thực thi **được chia nhỏ** (`.part000`, `.part001`, ...).
-Bạn cần **ghép lại** để tạo `gpt_agent.exe`, lấy **HDID** để nhận **license `.json`**, và (nếu chưa có) cài **ngrok** một lần.
+Bạn cần **ghép lại** để tạo `gpt_agent.exe` và lấy **HDID** để nhận **license `.json`**.
 
 ---
 
@@ -34,5 +34,4 @@ license.json
 ## 3) Chạy & setup
 
 - **Double-click `gpt_agent.exe`**
-- Chương trình sẽ tạo các file cần thiết cho setup → mở và làm theo **`SETUP_README.md`**
-- **Lưu ý:** `gpt_agent.exe` và `start_ngrok.bat` cần chạy **đồng thời**.
+- Vui lòng đọc các file README (ví dụ **`SETUP_README.md`**) để biết thêm chi tiết cài đặt và sử dụng.
