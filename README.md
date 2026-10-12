@@ -4,9 +4,9 @@
 
 <h1>Backend OS</h1>
 
-<p><strong>Model-to-API compatibility for client harnesses</strong></p>
+<p><strong>Local orchestration kernel for OpenAI-compatible clients</strong></p>
 
-<p>Đưa model backend ra qua một API tương thích để các client harness hiện có có thể kết nối mà không cần phụ thuộc trực tiếp vào implementation của model.</p>
+<p>Kết nối client qua API tương thích và MCP SSE với các browser worker được Chrome Extension đăng ký.</p>
 
 <p>
   <img src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square" alt="Windows">
@@ -14,38 +14,52 @@
   <img src="https://img.shields.io/badge/License-Required-F59E0B?style=flat-square" alt="License required">
 </p>
 
-<p><strong>Model backend vào. API tương thích ra. Client harness tiếp tục hoạt động.</strong></p>
+<p><strong>Client request vào. Kernel dispatch. Worker stream kết quả.</strong></p>
 
 </div>
 
 <br>
 
-<img src="./assets/backend-os-architecture.svg" alt="Backend OS model to API compatibility pipeline" width="100%">
+<img src="./assets/backend-os-architecture.svg" alt="Backend OS kernel and Chrome worker pipeline" width="100%">
 
 <br>
 
 <table align="center">
   <tr>
-    <td align="center" width="33%"><strong>MODEL BACKEND</strong><br><sub>Thực thi model và tạo response</sub></td>
-    <td align="center" width="33%"><strong>API COMPATIBILITY</strong><br><sub>Ánh xạ request, response và error</sub></td>
-    <td align="center" width="33%"><strong>CLIENT HARNESS</strong><br><sub>Kết nối qua client contract</sub></td>
+    <td align="center" width="33%"><strong>CLIENT HARNESS</strong><br><sub>OpenAI-compatible API hoặc MCP/SSE client</sub></td>
+    <td align="center" width="33%"><strong>BACKEND OS KERNEL</strong><br><sub>Auth, normalize, dispatch và stream</sub></td>
+    <td align="center" width="33%"><strong>CHROME WORKER</strong><br><sub>MV3 extension điều khiển browser tab</sub></td>
   </tr>
 </table>
 
 ## Backend OS là gì?
 
-Backend OS là lớp tương thích nằm giữa **model backend** và **client harness**. Client gọi vào API contract; implementation cụ thể của model nằm phía sau lớp adapter.
+Backend OS là một **kernel orchestration chạy local**. Kernel nhận request từ client, chuẩn hóa payload, dispatch công việc tới browser worker và stream kết quả ngược về client.
 
-Mục tiêu của repo là giữ cho hai phía tách biệt:
+Các endpoint chính:
 
 ```text
-Client harness  →  Client-compatible API  →  Backend OS adapter  →  Model backend
+Client harness
+  ├─ POST /v1/chat/completions
+  └─ MCP SSE /mcp/sse
+          ↓
+BackendOS Kernel :3210
+  ├─ authenticate + normalize + dispatch
+  ├─ coordinate /v1/swarm/*
+  └─ stream results via SSE
+          ↓
+Chrome Extension worker
+  ├─ register browser tab, provider and role
+  ├─ receive pending tasks
+  └─ harvest / stream results
 ```
 
 ## Cài đặt bản phát hành Windows
 
 <details>
 <summary><strong>Mở hướng dẫn cài đặt</strong></summary>
+
+Sau khi khởi chạy, kernel mặc định lắng nghe tại `http://127.0.0.1:3210`.
 
 ### 1. Chuẩn bị các file
 
