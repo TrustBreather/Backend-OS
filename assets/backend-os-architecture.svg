@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Backend OS compatibility pipeline</title>
+  <desc id="desc">A visual pipeline connecting a model backend, the Backend OS compatibility layer, and a client harness with request and response paths.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080d1d"/>
+      <stop offset="0.55" stop-color="#101832"/>
+      <stop offset="1" stop-color="#17102f"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#e879f9"/>
+    </linearGradient>
+    <linearGradient id="modelCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2c3d"/>
+      <stop offset="1" stop-color="#12203a"/>
+    </linearGradient>
+    <linearGradient id="clientCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#241641"/>
+      <stop offset="1" stop-color="#191735"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#94a3b8" stroke-opacity="0.1" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#67e8f9"/>
+    </marker>
+    <marker id="arrowPink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f0abfc"/>
+    </marker>
+  </defs>
+
+  <rect x="8" y="8" width="1184" height="344" rx="28" fill="url(#background)" stroke="#263354" stroke-width="2"/>
+  <rect x="9" y="9" width="1182" height="342" rx="27" fill="url(#grid)"/>
+
+  <text x="60" y="54" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">COMPATIBILITY PIPELINE</text>
+  <text x="1140" y="54" text-anchor="end" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1">MODEL · API · CLIENT</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="58" y="92" width="294" height="132" rx="18" fill="url(#modelCard)" stroke="#22d3ee" stroke-opacity="0.65" stroke-width="2"/>
+    <circle cx="88" cy="124" r="9" fill="#22d3ee" filter="url(#glow)"/>
+    <text x="112" y="130" fill="#67e8f9" font-size="13" font-weight="700" letter-spacing="2">MODEL BACKEND</text>
+    <text x="86" y="169" fill="#f8fafc" font-size="21" font-weight="700">Executes the model</text>
+    <text x="86" y="195" fill="#94a3b8" font-size="14">Produces the backend response</text>
+
+    <rect x="453" y="82" width="294" height="152" rx="18" fill="#141b3d" stroke="url(#core)" stroke-width="2" filter="url(#glow)"/>
+    <circle cx="483" cy="114" r="9" fill="#818cf8" filter="url(#glow)"/>
+    <text x="507" y="120" fill="#c4b5fd" font-size="13" font-weight="700" letter-spacing="2">BACKEND OS</text>
+    <text x="481" y="164" fill="#f8fafc" font-size="21" font-weight="700">Compatibility layer</text>
+    <text x="481" y="190" fill="#c7d2fe" font-size="14">Maps the client contract</text>
+    <text x="481" y="211" fill="#c7d2fe" font-size="14">to the model implementation</text>
+
+    <rect x="848" y="92" width="294" height="132" rx="18" fill="url(#clientCard)" stroke="#e879f9" stroke-opacity="0.7" stroke-width="2"/>
+    <circle cx="878" cy="124" r="9" fill="#e879f9" filter="url(#glow)"/>
+    <text x="902" y="130" fill="#f0abfc" font-size="13" font-weight="700" letter-spacing="2">CLIENT HARNESS</text>
+    <text x="876" y="169" fill="#f8fafc" font-size="21" font-weight="700">Uses the API contract</text>
+    <text x="876" y="195" fill="#c4b5fd" font-size="14">Connects without model coupling</text>
+  </g>
+
+  <path d="M 352 137 C 390 137 411 137 453 137" fill="none" stroke="#67e8f9" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <path d="M 747 137 C 785 137 806 137 848 137" fill="none" stroke="#818cf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <path d="M 848 198 C 806 198 785 198 747 198" fill="none" stroke="#f0abfc" stroke-opacity="0.8" stroke-width="2" stroke-dasharray="7 8" marker-end="url(#arrowPink)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 453 198 C 411 198 390 198 352 198" fill="none" stroke="#67e8f9" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="7 8" marker-end="url(#arrowCyan)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="1.6s" begin="-0.8s" repeatCount="indefinite"/>
+  </path>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1">
+    <rect x="360" y="112" width="68" height="22" rx="11" fill="#102d3b" stroke="#285d6c"/>
+    <text x="394" y="127" text-anchor="middle" fill="#67e8f9">RESPONSE</text>
+    <rect x="765" y="112" width="68" height="22" rx="11" fill="#20204a" stroke="#4b4b8f"/>
+    <text x="799" y="127" text-anchor="middle" fill="#c4b5fd">ADAPTER</text>
+    <rect x="765" y="211" width="68" height="22" rx="11" fill="#301d41" stroke="#6d3b77"/>
+    <text x="799" y="226" text-anchor="middle" fill="#f0abfc">REQUEST</text>
+  </g>
+
+  <g transform="translate(58 278)" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1">
+    <rect x="0" y="0" width="170" height="28" rx="14" fill="#111c38" stroke="#263b67"/>
+    <rect x="184" y="0" width="170" height="28" rx="14" fill="#111c38" stroke="#263b67"/>
+    <rect x="368" y="0" width="170" height="28" rx="14" fill="#111c38" stroke="#263b67"/>
+    <rect x="552" y="0" width="170" height="28" rx="14" fill="#111c38" stroke="#263b67"/>
+    <text x="85" y="18" text-anchor="middle" fill="#67e8f9">MODEL INPUT</text>
+    <text x="269" y="18" text-anchor="middle" fill="#a5b4fc">API ADAPTER</text>
+    <text x="453" y="18" text-anchor="middle" fill="#f0abfc">CLIENT CONTRACT</text>
+    <text x="637" y="18" text-anchor="middle" fill="#c4b5fd">COMPATIBLE FLOW</text>
+  </g>
+</svg>

@@ -2,11 +2,11 @@
 
 <img src="./assets/backend-os-banner.svg" alt="Backend OS animated banner" width="100%">
 
-# Backend OS
+<h1>Backend OS</h1>
 
-### Model-to-API compatibility for client harnesses
+<p><strong>Model-to-API compatibility for client harnesses</strong></p>
 
-Đưa model backend ra qua một API tương thích để các client harness hiện có có thể kết nối mà không cần phụ thuộc trực tiếp vào implementation của model.
+<p>Đưa model backend ra qua một API tương thích để các client harness hiện có có thể kết nối mà không cần phụ thuộc trực tiếp vào implementation của model.</p>
 
 <p>
   <img src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square" alt="Windows">
@@ -14,57 +14,38 @@
   <img src="https://img.shields.io/badge/License-Required-F59E0B?style=flat-square" alt="License required">
 </p>
 
-<p>
-  <strong>Model backend vào. API tương thích ra. Client harness tiếp tục hoạt động.</strong>
-</p>
+<p><strong>Model backend vào. API tương thích ra. Client harness tiếp tục hoạt động.</strong></p>
 
 </div>
 
----
+<br>
 
-## Backend OS là gì?
+<img src="./assets/backend-os-architecture.svg" alt="Backend OS model to API compatibility pipeline" width="100%">
 
-Backend OS là lớp tương thích nằm giữa **model backend** và **client harness**. Repo đưa model ra qua một API surface mà client đã biết cách gọi, để contract của client được tách khỏi implementation cụ thể phía backend.
+<br>
 
-Các lớp chính:
-
-<table>
+<table align="center">
   <tr>
-    <td width="50%">
-      <h3>Model backend</h3>
-      Nơi model thực thi và tạo ra response cho request.
-    </td>
-    <td width="50%">
-      <h3>API compatibility</h3>
-      Ánh xạ request, response và error về hình dạng mà client harness mong đợi.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>Client harness</h3>
-      Cho phép các client hiện có kết nối qua interface tương thích.
-    </td>
-    <td width="50%">
-      <h3>Adapter boundary</h3>
-      Giữ contract phía client tách khỏi implementation của model backend.
-    </td>
+    <td align="center" width="33%"><strong>MODEL BACKEND</strong><br><sub>Thực thi model và tạo response</sub></td>
+    <td align="center" width="33%"><strong>API COMPATIBILITY</strong><br><sub>Ánh xạ request, response và error</sub></td>
+    <td align="center" width="33%"><strong>CLIENT HARNESS</strong><br><sub>Kết nối qua client contract</sub></td>
   </tr>
 </table>
 
-### Luồng hoạt động
+## Backend OS là gì?
 
-```mermaid
-flowchart LR
-    A["Model backend"] --> B["Backend OS compatibility layer"]
-    B --> C["Client-compatible API"]
-    C --> D["Client harness"]
+Backend OS là lớp tương thích nằm giữa **model backend** và **client harness**. Client gọi vào API contract; implementation cụ thể của model nằm phía sau lớp adapter.
+
+Mục tiêu của repo là giữ cho hai phía tách biệt:
+
+```text
+Client harness  →  Client-compatible API  →  Backend OS adapter  →  Model backend
 ```
 
-> **Compatibility by design:** client gọi vào API contract; implementation cụ thể của model nằm phía sau lớp tương thích.
-
----
-
 ## Cài đặt bản phát hành Windows
+
+<details>
+<summary><strong>Mở hướng dẫn cài đặt</strong></summary>
 
 ### 1. Chuẩn bị các file
 
@@ -114,7 +95,7 @@ license.json
 
 Double-click `gpt_agent.exe` sau khi license đã được đặt đúng vị trí.
 
----
+</details>
 
 ## Các file chính
 
@@ -129,6 +110,8 @@ Double-click `gpt_agent.exe` sau khi license đã được đặt đúng vị tr
 
 <div align="center">
 
-### Build the workflow. Keep the intent simple.
+<br>
+
+<strong>Model in. API out. Client-compatible by design.</strong>
 
 </div>
