@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Backend OS — model-to-API compatibility for client harnesses</title>
+  <desc id="desc">A dark neon animated banner showing a backend model flowing through an API compatibility layer into a client harness.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080d1d"/>
+      <stop offset="0.55" stop-color="#101832"/>
+      <stop offset="1" stop-color="#17102f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.52" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#e879f9"/>
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e879f9" stop-opacity="0.04"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#94a3b8" stroke-opacity="0.11" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="typingClip" clipPathUnits="userSpaceOnUse">
+      <rect x="69" y="232" width="225" height="34">
+        <animate begin="0.2s" attributeName="width" values="0;225;225;0;0" keyTimes="0;0.38;0.58;0.92;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect x="8" y="8" width="1184" height="404" rx="30" fill="url(#bg)" stroke="#263354" stroke-width="2"/>
+  <rect x="9" y="9" width="1182" height="402" rx="29" fill="url(#grid)"/>
+  <ellipse cx="930" cy="195" rx="330" ry="250" fill="url(#halo)" filter="url(#softGlow)">
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g opacity="0.9">
+    <rect x="66" y="48" width="196" height="36" rx="18" fill="#111c38" stroke="#304267"/>
+    <circle cx="88" cy="66" r="5" fill="#22d3ee" filter="url(#glow)">
+      <animate attributeName="r" values="4;7;4" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="104" y="72" fill="#c7d2fe" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">BACKEND OS</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="66" y="158" fill="#f8fafc" font-size="51" font-weight="800" letter-spacing="-1">MODEL TO API</text>
+    <text x="66" y="214" fill="url(#accent)" font-size="55" font-weight="800" letter-spacing="-2">COMPATIBILITY</text>
+    <text x="52" y="258" fill="#22d3ee" font-size="19" font-weight="700">&gt;</text>
+    <g clip-path="url(#typingClip)">
+      <text x="69" y="258" fill="#a5b4fc" font-size="18" font-weight="500">Connect client harnesses</text>
+    </g>
+    <rect x="292" y="239" width="3" height="23" rx="1.5" fill="#e879f9" filter="url(#glow)">
+      <animate begin="0.2s" attributeName="x" values="69;292;292;69;69" keyTimes="0;0.38;0.58;0.92;1" dur="8s" repeatCount="indefinite"/>
+      <animate begin="0.2s" attributeName="opacity" values="1;1;0.25;1;1" keyTimes="0;0.38;0.58;0.92;1" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="69" y="310" fill="#64748b" font-size="14" letter-spacing="1">MODEL  ·  API  ·  CLIENT  ·  HARNESS</text>
+  </g>
+
+  <g transform="translate(760 92)">
+    <path d="M 0 105 C 70 105 72 35 145 35 S 220 105 290 105" fill="none" stroke="#33456f" stroke-width="2"/>
+    <path d="M 0 105 C 70 105 72 175 145 175 S 220 105 290 105" fill="none" stroke="#33456f" stroke-width="2"/>
+    <path d="M 0 105 L 290 105" fill="none" stroke="#33456f" stroke-width="2" stroke-dasharray="5 10">
+      <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+
+    <circle cx="0" cy="105" r="25" fill="#121e3a" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="145" cy="35" r="25" fill="#181c45" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="145" cy="175" r="25" fill="#25183e" stroke="#e879f9" stroke-width="2"/>
+    <circle cx="290" cy="105" r="34" fill="url(#accentSoft)" stroke="url(#accent)" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="r" values="32;37;32" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <g fill="#e2e8f0" font-size="12" text-anchor="middle" font-weight="700">
+      <text x="0" y="109">MODEL</text>
+      <text x="145" y="39">API</text>
+      <text x="145" y="179">ADAPTER</text>
+      <text x="290" y="109">CLIENT</text>
+    </g>
+
+    <circle cx="0" cy="105" r="5" fill="#67e8f9" filter="url(#glow)">
+      <animateMotion dur="3.8s" repeatCount="indefinite" path="M 0 0 C 70 0 72 -70 145 -70 S 220 0 290 0"/>
+    </circle>
+    <circle cx="0" cy="105" r="4" fill="#f0abfc" filter="url(#glow)">
+      <animateMotion dur="4.6s" begin="-1.9s" repeatCount="indefinite" path="M 0 0 C 70 0 72 70 145 70 S 220 0 290 0"/>
+    </circle>
+  </g>
+
+  <g transform="translate(760 318)" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1">
+    <rect x="0" y="0" width="104" height="28" rx="14" fill="#111c38" stroke="#263b67"/>
+    <rect x="116" y="0" width="104" height="28" rx="14" fill="#111c38" stroke="#263b67"/>
+    <rect x="232" y="0" width="104" height="28" rx="14" fill="#111c38" stroke="#263b67"/>
+    <text x="52" y="18" text-anchor="middle" fill="#67e8f9">MODEL</text>
+    <text x="168" y="18" text-anchor="middle" fill="#a5b4fc">API</text>
+    <text x="284" y="18" text-anchor="middle" fill="#f0abfc">CLIENT</text>
+  </g>
+
+  <path d="M 68 365 H 580" stroke="url(#accent)" stroke-opacity="0.5" stroke-width="1">
+    <animate attributeName="stroke-dasharray" values="0 520;520 0;0 520" dur="5s" repeatCount="indefinite"/>
+  </path>
+</svg>
