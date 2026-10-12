@@ -57,8 +57,16 @@
   </g>
 
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="66" y="158" fill="#f8fafc" font-size="51" font-weight="800" letter-spacing="-1">MODEL TO API</text>
-    <text x="66" y="214" fill="url(#accent)" font-size="55" font-weight="800" letter-spacing="-2">COMPATIBILITY</text>
+    <g>
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.15s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.7s" begin="0.15s" fill="freeze"/>
+      <text x="66" y="158" fill="#f8fafc" font-size="51" font-weight="800" letter-spacing="-1">MODEL TO API</text>
+    </g>
+    <g>
+      <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.45s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.7s" begin="0.45s" fill="freeze"/>
+      <text x="66" y="214" fill="url(#accent)" font-size="55" font-weight="800" letter-spacing="-2">COMPATIBILITY</text>
+    </g>
     <text x="52" y="258" fill="#22d3ee" font-size="19" font-weight="700">&gt;</text>
     <g clip-path="url(#typingClip)">
       <text x="69" y="258" fill="#a5b4fc" font-size="18" font-weight="500">Connect client harnesses</text>
