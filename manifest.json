@@ -1,119 +1,245 @@
 {
+    "format": "backendos-artifact-v2",
+    "origin": "894a0266f1d84f021b77426317c27519ce2cd542",
+    "base": "46d02daae0439c4bf9993059d4524fbb10d10f34",
+    "sequence": 80,
+    "track": "stable",
+    "floor": 1,
+    "image": {
+        "name": "gpt_agent.exe",
+        "bytes": 511694121,
+        "digest": "A6714213F446A2D7940364C656E4CC11BDC88CF60F95B46FA4695AE294660E23"
+    },
+    "segments": [
+        {
+            "name": "gpt_agent.exe.part001",
+            "bytes": 24117248,
+            "digest": "833EF791C477A8CF0540874EA77C16CB8209B8CFFA1A833A170FA2E122D257C2"
+        },
+        {
+            "name": "gpt_agent.exe.part002",
+            "bytes": 24117248,
+            "digest": "7EB0A22B72EA193B108A2DDE0F72D012B8182DBC21594F17D03975736E595B4D"
+        },
+        {
+            "name": "gpt_agent.exe.part003",
+            "bytes": 24117248,
+            "digest": "995F0BF18173416B783EFAD877446498783B4BD409D4FFEE274F161A50033323"
+        },
+        {
+            "name": "gpt_agent.exe.part004",
+            "bytes": 24117248,
+            "digest": "6DAA2788D5381DA56FE268DBDC0EA330B63F0229371A6640DBD87A24FEA3B4E7"
+        },
+        {
+            "name": "gpt_agent.exe.part005",
+            "bytes": 24117248,
+            "digest": "CD541572D0281ED7A0686764A71016005090CEEC6B27042F1DC081A642723225"
+        },
+        {
+            "name": "gpt_agent.exe.part006",
+            "bytes": 24117248,
+            "digest": "4EDE9C2B4AA583F66BEDEA4E0B6FC4FA73A1EA4CC2057758E1890A22A2245B2B"
+        },
+        {
+            "name": "gpt_agent.exe.part007",
+            "bytes": 24117248,
+            "digest": "B45EF86FAB9603FAE3A91C7CFECF4081EAAA8F2683E2463AE19D859112E2F38C"
+        },
+        {
+            "name": "gpt_agent.exe.part008",
+            "bytes": 24117248,
+            "digest": "FD52CDB7002111CF3C2CBD5E277F34554375E7A75A24B2BCF1BCE359382FAC3F"
+        },
+        {
+            "name": "gpt_agent.exe.part009",
+            "bytes": 24117248,
+            "digest": "FCA033DCF1C4D9B81CEB2F6EE409467CFF39FF4FBEC196D8D4D487842248E4E3"
+        },
+        {
+            "name": "gpt_agent.exe.part010",
+            "bytes": 24117248,
+            "digest": "C45DC9E4F01F565A846574A6644D4590216F874271B4CCB9A17F76647B2AB137"
+        },
+        {
+            "name": "gpt_agent.exe.part011",
+            "bytes": 24117248,
+            "digest": "8298B31392BC935A1E1DA90D7B48AF12DAA9432A16D2934F0DEF8DA937D3EEFF"
+        },
+        {
+            "name": "gpt_agent.exe.part012",
+            "bytes": 24117248,
+            "digest": "2E3EFF8AD9D96ED4016E1FE2B8DCE8DCD74755F93878105BE9A0C6920F7D4E30"
+        },
+        {
+            "name": "gpt_agent.exe.part013",
+            "bytes": 24117248,
+            "digest": "0B8BD81732A2395701A4FE040B0CD58D96C849F2E1A23E336022C3556C48121D"
+        },
+        {
+            "name": "gpt_agent.exe.part014",
+            "bytes": 24117248,
+            "digest": "7F1A4AF75E1D8D05EF449E9A48E6E955E8123F96C0D659261ED03F34CC9A3305"
+        },
+        {
+            "name": "gpt_agent.exe.part015",
+            "bytes": 24117248,
+            "digest": "0D3DEBE929D80A4766D986D28F9FD10235D15AE61621B889634D9D1D9187510F"
+        },
+        {
+            "name": "gpt_agent.exe.part016",
+            "bytes": 24117248,
+            "digest": "CB2ADCE5F3C62AFE171443AE37E4815CE60FDE8F2E76931829B20DCA624B4893"
+        },
+        {
+            "name": "gpt_agent.exe.part017",
+            "bytes": 24117248,
+            "digest": "8E2EA99024F894DB6E36F2C57E04AC274970C09A883B89618D6BD2782AE29A18"
+        },
+        {
+            "name": "gpt_agent.exe.part018",
+            "bytes": 24117248,
+            "digest": "A2CEE090F921EB629F7EBDF396BD3FC10373A6D0BCAC567B13916AEBAAC90311"
+        },
+        {
+            "name": "gpt_agent.exe.part019",
+            "bytes": 24117248,
+            "digest": "337B79180C8DA2520DB67D4435177DCFD66DC35BBA7B6099907F164A4CF40033"
+        },
+        {
+            "name": "gpt_agent.exe.part020",
+            "bytes": 24117248,
+            "digest": "E5A2D9646BFDD84DEAEE90D3ACA09F46E57842F7EE84FCC5853FED6B19579293"
+        },
+        {
+            "name": "gpt_agent.exe.part021",
+            "bytes": 24117248,
+            "digest": "7E50DE99452DA2183DDA0D7D64012954F8D210FDD012EF93992B48FC4838A94B"
+        },
+        {
+            "name": "gpt_agent.exe.part022",
+            "bytes": 5231913,
+            "digest": "0B1472F0932D6CB396ED396F30A875DE3E4991E50680686511B9F12ACE112288"
+        }
+    ],
     "original_file": "gpt_agent.exe",
-    "original_bytes": 511692309,
-    "original_sha256": "7D7286719FA740116C71976AD5A6D25E977317BFFFFF68C7ED0DDC11EC694BAD",
+    "original_bytes": 511694121,
+    "original_sha256": "A6714213F446A2D7940364C656E4CC11BDC88CF60F95B46FA4695AE294660E23",
     "chunk_size_mib": 23,
     "chunk_count": 22,
     "chunks": [
         {
             "file": "gpt_agent.exe.part001",
             "bytes": 24117248,
-            "sha256": "BDD4B947DE53734C46D8AC6C3316A38B3DF76BC31BD533861FF743DF1BBA1C19"
+            "sha256": "833EF791C477A8CF0540874EA77C16CB8209B8CFFA1A833A170FA2E122D257C2"
         },
         {
             "file": "gpt_agent.exe.part002",
             "bytes": 24117248,
-            "sha256": "AFAD102E09B5F9F3A0939C36B06AA5BF201C32E53F3F2CC1E245794EF80AB7B8"
+            "sha256": "7EB0A22B72EA193B108A2DDE0F72D012B8182DBC21594F17D03975736E595B4D"
         },
         {
             "file": "gpt_agent.exe.part003",
             "bytes": 24117248,
-            "sha256": "8E0DE2B524893167B11BFC4BAF244C5FD4716A91F5C085BCA61B6995B23B0ECD"
+            "sha256": "995F0BF18173416B783EFAD877446498783B4BD409D4FFEE274F161A50033323"
         },
         {
             "file": "gpt_agent.exe.part004",
             "bytes": 24117248,
-            "sha256": "14E27D332174406C5D9BD4007A6CEACD0D6BBB3A2B93C542608D24A14BA8336C"
+            "sha256": "6DAA2788D5381DA56FE268DBDC0EA330B63F0229371A6640DBD87A24FEA3B4E7"
         },
         {
             "file": "gpt_agent.exe.part005",
             "bytes": 24117248,
-            "sha256": "4CAAEB66297F41FFA2873CFDE9B7F67CCC5EB22D197389CD93EB517F136DBCF1"
+            "sha256": "CD541572D0281ED7A0686764A71016005090CEEC6B27042F1DC081A642723225"
         },
         {
             "file": "gpt_agent.exe.part006",
             "bytes": 24117248,
-            "sha256": "3B120DEB912764F7B165443F185B7F16880851298E918CD75F3B94C8A8177F18"
+            "sha256": "4EDE9C2B4AA583F66BEDEA4E0B6FC4FA73A1EA4CC2057758E1890A22A2245B2B"
         },
         {
             "file": "gpt_agent.exe.part007",
             "bytes": 24117248,
-            "sha256": "27E9CC81309BAD74EC8E5BA901B2C07D682C5B49276D986B61816C5C1A984301"
+            "sha256": "B45EF86FAB9603FAE3A91C7CFECF4081EAAA8F2683E2463AE19D859112E2F38C"
         },
         {
             "file": "gpt_agent.exe.part008",
             "bytes": 24117248,
-            "sha256": "F3B87DB5416188A69B5D47B085736F286EEFFCBBB69FD6DB58379B5BB4D5B907"
+            "sha256": "FD52CDB7002111CF3C2CBD5E277F34554375E7A75A24B2BCF1BCE359382FAC3F"
         },
         {
             "file": "gpt_agent.exe.part009",
             "bytes": 24117248,
-            "sha256": "0FF73383811AB9922445E997386FEF65539E05D6D320DBAA2A205B00D7EE56EC"
+            "sha256": "FCA033DCF1C4D9B81CEB2F6EE409467CFF39FF4FBEC196D8D4D487842248E4E3"
         },
         {
             "file": "gpt_agent.exe.part010",
             "bytes": 24117248,
-            "sha256": "9D16D35990197F94D9DC8C69C5A354726542D3D37913BA2DBB1493CEB61E6B05"
+            "sha256": "C45DC9E4F01F565A846574A6644D4590216F874271B4CCB9A17F76647B2AB137"
         },
         {
             "file": "gpt_agent.exe.part011",
             "bytes": 24117248,
-            "sha256": "4D4B6670BA32259D9C5F95EEBEE5D5FFFDAD91AD610AB395E0E724F99BB8DA39"
+            "sha256": "8298B31392BC935A1E1DA90D7B48AF12DAA9432A16D2934F0DEF8DA937D3EEFF"
         },
         {
             "file": "gpt_agent.exe.part012",
             "bytes": 24117248,
-            "sha256": "154A3C0292ACC99EBB74AF269AF0B2447D8A9C7BD4953B2798A20D05DD83A29A"
+            "sha256": "2E3EFF8AD9D96ED4016E1FE2B8DCE8DCD74755F93878105BE9A0C6920F7D4E30"
         },
         {
             "file": "gpt_agent.exe.part013",
             "bytes": 24117248,
-            "sha256": "0893E438EEE545DF7228D9A030F544AB5E1B4F3073681DE54BB2A987DD9A1D72"
+            "sha256": "0B8BD81732A2395701A4FE040B0CD58D96C849F2E1A23E336022C3556C48121D"
         },
         {
             "file": "gpt_agent.exe.part014",
             "bytes": 24117248,
-            "sha256": "42A955EDB029D8B0E829393EFED49036D826BC3B1FF6750BE157261C8C9D5F3C"
+            "sha256": "7F1A4AF75E1D8D05EF449E9A48E6E955E8123F96C0D659261ED03F34CC9A3305"
         },
         {
             "file": "gpt_agent.exe.part015",
             "bytes": 24117248,
-            "sha256": "E96AA95D89DD76B208C5E2D7F575AC3FB28F80277763BC2A0309CD47E5FBA228"
+            "sha256": "0D3DEBE929D80A4766D986D28F9FD10235D15AE61621B889634D9D1D9187510F"
         },
         {
             "file": "gpt_agent.exe.part016",
             "bytes": 24117248,
-            "sha256": "DDEE4DCBCFEC7261310EA09A3CBBBA5461A5F7B90DCB1C146EE596759033BAE7"
+            "sha256": "CB2ADCE5F3C62AFE171443AE37E4815CE60FDE8F2E76931829B20DCA624B4893"
         },
         {
             "file": "gpt_agent.exe.part017",
             "bytes": 24117248,
-            "sha256": "CDFD2EC00110AB29878623E1C21CCE6E8E9DBDC009E8E849A77353F4451D9552"
+            "sha256": "8E2EA99024F894DB6E36F2C57E04AC274970C09A883B89618D6BD2782AE29A18"
         },
         {
             "file": "gpt_agent.exe.part018",
             "bytes": 24117248,
-            "sha256": "61DA8DEF41FF09CEFB1CC239C1BF392D9D83E911E48B64349473FD0027D390E3"
+            "sha256": "A2CEE090F921EB629F7EBDF396BD3FC10373A6D0BCAC567B13916AEBAAC90311"
         },
         {
             "file": "gpt_agent.exe.part019",
             "bytes": 24117248,
-            "sha256": "C436357515DF979B15E3E84BCE58B389C0E768623DEA91F3FD9443011578027D"
+            "sha256": "337B79180C8DA2520DB67D4435177DCFD66DC35BBA7B6099907F164A4CF40033"
         },
         {
             "file": "gpt_agent.exe.part020",
             "bytes": 24117248,
-            "sha256": "0D3084BC77E53524D16C0338F52BCF74BEEEBB8521FEBC3C09EF2B99D3EC4F9A"
+            "sha256": "E5A2D9646BFDD84DEAEE90D3ACA09F46E57842F7EE84FCC5853FED6B19579293"
         },
         {
             "file": "gpt_agent.exe.part021",
             "bytes": 24117248,
-            "sha256": "F1B20F5C2F79B79616400E6EB29C40AE7D0913B0A41188A4427DC4A464E5ED13"
+            "sha256": "7E50DE99452DA2183DDA0D7D64012954F8D210FDD012EF93992B48FC4838A94B"
         },
         {
             "file": "gpt_agent.exe.part022",
-            "bytes": 5230101,
-            "sha256": "D6821962CA6DF1B4CCE5B326945CFF6683815DD9B7F75DEA0B0C04BF1664C915"
+            "bytes": 5231913,
+            "sha256": "0B1472F0932D6CB396ED396F30A875DE3E4991E50680686511B9F12ACE112288"
         }
-    ]
+    ],
+    "proof": {
+        "data": "eFUHpGolm7D/VX5LCGTbELGorgoGRx5Gc1xzEmMtfuFRigYVcX5sSOaPV7hrjgHDJmjAvuAlPUB0MB/bsB3oBg=="
+    }
 }
