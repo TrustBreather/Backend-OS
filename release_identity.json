@@ -1,9 +1,9 @@
 {
   "format": "backendos-release-identity-v1",
-  "release_number": 80,
-  "public_base_revision": 79,
-  "public_base_commit": "46d02daae0439c4bf9993059d4524fbb10d10f34",
+  "release_number": 81,
+  "public_base_revision": 80,
+  "public_base_commit": "eae460ef4787b72403d3dea45757ed9d1ea658cb",
   "public_remote_url": "https://github.com/TrustBreather/Backend-OS.git",
-  "source_commit": "894a0266f1d84f021b77426317c27519ce2cd542",
+  "source_commit": "f7da1752097f26c760ddec2b9f471ae0a7d14f75",
   "source_worktree_dirty": false
 }
