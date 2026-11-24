@@ -1,7 +1,7 @@
 {
     "format": "backendos-artifact-v2",
     "origin": "ff326bae2c3a7d0266b7de3d80e0070e43e1ffe0",
-    "base": "71a4fe58ab23ac613c13bb48f942d1bfdcb1d86a",
+    "base": "78000271a2cf357b2b9355c21b76f461f25ddd29",
     "sequence": 91,
     "track": "stable",
     "floor": 1,
@@ -240,6 +240,6 @@
         }
     ],
     "proof": {
-        "data": "UOp6KfX+q6DX+zG2GHL6/KhATvjWkWgCUkI7OwFmZwUk1/MQVHJY+f6zpGVX/rQGq01DEMuoEshrIC5QbQ5KCQ=="
+        "data": "eBlfb+IJLP6nEL0NOFl+Ne0zF6xAFlKT+bVSz/xNMfOxoiJvzJsFtuJ89L7RE+FHXiBY9j3h3VZcsU0gMiRNAQ=="
     }
 }
